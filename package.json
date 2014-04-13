@@ -1,5 +1,5 @@
 {
-  "name": "application-name",
+  "name": "404-server",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,5 +8,17 @@
   "dependencies": {
     "express": "3.4.0",
     "jade": "*"
-  }
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:danheidel/404-server.git"
+  },
+  "author": "Dan Heidel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danheidel/404-server/issues"
+  },
+  "homepage": "https://github.com/danheidel/404-server"
 }
