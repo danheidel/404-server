@@ -12,7 +12,7 @@ app.listen(port);
 console.log('serving 404s on port: ' + port);
 
 function startup(){
-	console.log('starting as user: ' + user);
+	console.log('starting as user: ' + process.env.USER);
 
 	user = parseInt(process.env.NODEUSERID) || parseInt(process.argv[2]);
 	if(!user){
@@ -32,7 +32,7 @@ function startup(){
 	console.log('user changed to: ' + user);
 	
 	port = parseInt(process.env.NODESERVERPORT) || parseInt(process.argv[3]);
-	if(typeof port === 'undefined'){
+	if(!port){
 		console.error('no port defined, exiting');
 		process.exit();
 	}
